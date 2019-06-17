@@ -10,8 +10,6 @@ cv2.waitKey(0) # the argument is the number of milliseconds before auto-close. 0
 
 cv2.destroyAllWindows()
 
-cv2.imwrite('assets/aman_copy.png', img)
-
 im2_list = []
 
 
@@ -37,5 +35,7 @@ print(img.shape)
 cv2.imshow('image', im2)
 
 cv2.waitKey(0)
+
+cv2.imwrite('assets/aman_copy.png', img)
 
 cv2.destroyAllWindows()
