@@ -14,10 +14,8 @@ while True:
 	print("Faces found:", len(face_detect))
 	print(face_detect)
 
-
-
 	for (x, y, w, h) in face_detect:
-		cv2.rectangle(gray_image, (x, y), (x+w, y+h), (255, 255, 255), 1)
+		cv2.rectangle(gray_image, (x, y), (x+w, y+h), (255, 100, 100), 1)
 	cv2.imshow('frame', gray_image)
 
 	if cv2.waitKey(1) & 0xFF == ord('q'):
