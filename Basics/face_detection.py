@@ -3,7 +3,9 @@ import numpy as np
 
 cap = cv2.VideoCapture(0) # arg is the device index of camera. Usually 0 or -1.
 
-face_cascade = cv2.CascadeClassifier('assets/haarcascade_frontalface_alt.xml')
+# face_cascade = cv2.CascadeClassifier('assets/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier('assets/haar_hand.xml')
+
 
 while True:
 	ret, frame = cap.read()
